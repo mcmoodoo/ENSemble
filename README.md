@@ -20,11 +20,11 @@ Create `.env.local` (see `.env.example`):
 
 ```env
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id
-INFURA_ETHEREUM_MAINNET_RPC=https://mainnet.infura.io/v3/YOUR_INFURA_KEY
+NEXT_PUBLIC_INFURA_ETHEREUM_MAINNET_RPC=https://mainnet.infura.io/v3/YOUR_INFURA_KEY
 ```
 
 - **WalletConnect**: get a project ID at [WalletConnect Cloud](https://cloud.walletconnect.com/).
-- **Mainnet RPC**: set `INFURA_ETHEREUM_MAINNET_RPC` for ENS and profile reads.
+- **Mainnet RPC**: set `NEXT_PUBLIC_INFURA_ETHEREUM_MAINNET_RPC` for ENS and profile reads in the browser (must be `NEXT_PUBLIC_` so the client can use it).
 
 ## Run
 
@@ -40,6 +40,7 @@ Open [http://localhost:3000](http://localhost:3000).
 - `bun run build` — production build
 - `bun run start` — run production build
 - `bun run lint` — ESLint
+- `bun run print-ens-records` — print ENS text records (script)
 
 ## Pages
 
@@ -51,4 +52,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## DeFi profile keys
 
-See `src/lib/defi-profile-spec.ts` and `../docs/IMPLEMENTATION_PLAN.md`.
+See `src/lib/defi-profile-spec.ts` for keys, types, and parsing.
