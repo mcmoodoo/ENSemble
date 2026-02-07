@@ -45,7 +45,7 @@ export default function SwapPage() {
         </h1>
         {!address && (
           <p className="text-gray-600 dark:text-gray-400">
-            Connect your wallet to use your DeFi profile for swap preferences.
+            Connect your wallet to use your ENSemble profile for swap preferences.
           </p>
         )}
         {address && (

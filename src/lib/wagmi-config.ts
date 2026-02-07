@@ -11,7 +11,7 @@ const mainnetRpc =
   process.env.INFURA_ETHEREUM_MAINNET_RPC;
 
 export const config = getDefaultConfig({
-  appName: "ENS DeFi Profile",
+  appName: "ENSemble",
   projectId,
   chains: [mainnet, base],
   transports: {

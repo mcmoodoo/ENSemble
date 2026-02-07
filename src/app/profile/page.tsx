@@ -183,12 +183,12 @@ export default function ProfilePage() {
       <Header />
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-8">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-          My DeFi profile
+          My ENSemble profile
         </h1>
 
         {!address && (
           <p className="text-gray-600 dark:text-gray-400">
-            Connect your wallet to view and edit your ENS DeFi profile.
+            Connect your wallet to view and edit your ENSemble profile.
           </p>
         )}
 

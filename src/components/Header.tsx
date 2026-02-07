@@ -8,8 +8,11 @@ export function Header() {
     <header className="border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
         <nav className="flex items-center gap-6">
-          <Link href="/" className="font-semibold text-gray-900 dark:text-white">
-            ENS DeFi Profile
+          <Link
+            href="/"
+            className="text-lg font-bold tracking-tight text-gray-900 dark:text-white hover:opacity-90"
+          >
+            ENSemble
           </Link>
           <Link
             href="/profile"

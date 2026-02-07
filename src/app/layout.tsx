@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ENS DeFi Profile",
-  description: "Your ENS name, your DeFi preferences",
+  title: "ENSemble",
+  description: "Your ENS name, your DeFi preferences — one profile, many apps.",
 };
 
 export default function RootLayout({

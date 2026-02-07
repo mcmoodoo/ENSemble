@@ -1,6 +1,6 @@
-# ENS DeFi Profile — Web App
+# ENSemble — Web App
 
-Next.js app: connect wallet, edit your ENS DeFi profile (text records), use it in Swap, send to ENS name, and look up any profile.
+**ENSemble** is a Next.js app: connect wallet, edit your ENS DeFi profile (text records), use it in Swap, send to ENS name, and look up any profile.
 
 ## Purpose
 

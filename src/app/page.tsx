@@ -7,11 +7,12 @@ export default function Home() {
       <Header />
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-16">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          Your ENS name, your DeFi preferences
+          ENSemble
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-xl">
-          Store swap and payment preferences on your ENS name. Any app that
-          supports this spec can read them — one profile, many apps.
+          Your ENS name, your DeFi preferences. Store swap and payment prefs on
+          your ENS name — any app that supports this spec can read them. One
+          profile, many apps.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
