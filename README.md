@@ -2,6 +2,21 @@
 
 Next.js app: connect wallet, edit your ENS DeFi profile (text records), use it in Swap, send to ENS name, and look up any profile.
 
+## Purpose
+
+Store **swap and payment preferences on your ENS name** so any app that supports this spec can read them. One profile, many apps — set preferences once and use them across DeFi and payment flows.
+
+## Features
+
+| Area | What it does |
+|------|---------------|
+| **Profile** | Edit and save your DeFi profile to your ENS name (mainnet). Load from ENS, change slippage, DEXes, chain, tokens, payment prefs; save via on-chain transactions. |
+| **Swap** | Shows your profile for context; actual swap (0x/1inch) not wired yet — profile would pre-fill slippage, chain, and DEX options. |
+| **Send** | Send ETH to an ENS name. Resolves name to address and shows optional payment hints (preferred token/chain) from the recipient’s profile. |
+| **Lookup** | Read any ENS name’s address and full DeFi profile (read-only). |
+
+Profile data lives in **ENS text records** (see [DeFi profile keys](#defi-profile-keys) below).
+
 ## Stack
 
 - **Next.js 14**, **React 18**, **TypeScript**
