@@ -8,12 +8,12 @@ Store **swap and payment preferences on your ENS name** so any app that supports
 
 ## Features
 
-| Area | What it does |
-|------|---------------|
+| Area        | What it does                                                                                                                                                     |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Profile** | Edit and save your DeFi profile to your ENS name (mainnet). Load from ENS, change slippage, DEXes, chain, tokens, payment prefs; save via on-chain transactions. |
-| **Swap** | Shows your profile for context; actual swap (0x/1inch) not wired yet — profile would pre-fill slippage, chain, and DEX options. |
-| **Send** | Send ETH to an ENS name. Resolves name to address and shows optional payment hints (preferred token/chain) from the recipient’s profile. |
-| **Lookup** | Read any ENS name’s address and full DeFi profile (read-only). |
+| **Swap**    | Shows your profile for context; actual swap (0x/1inch) not wired yet — profile would pre-fill slippage, chain, and DEX options.                                  |
+| **Send**    | Send ETH to an ENS name. Resolves name to address and shows optional payment hints (preferred token/chain) from the recipient’s profile.                         |
+| **Lookup**  | Read any ENS name’s address and full DeFi profile (read-only).                                                                                                   |
 
 Profile data lives in **ENS text records** (see [DeFi profile keys](#defi-profile-keys) below).
 
@@ -64,6 +64,12 @@ Open [http://localhost:3000](http://localhost:3000).
 - **/swap** — Swap (reads profile for pre-fill; 0x/1inch not wired yet)
 - **/send** — Send ETH to an ENS name (resolve + optional payment hints)
 - **/lookup** — Look up any ENS name’s DeFi profile (read-only)
+
+## Transactions performed during the DEMO
+
+1. Setting text record on ENS Public Resolver — [etherscan.io/tx/0x1db5…](https://etherscan.io/tx/0x1db5e4ccdbc257d699960a0dd8fe9280fb792194d6e67ad3de1aa0991e3a8437)
+2. Setting text record on ENS Public Resolver — [etherscan.io/tx/0x10a9…](https://etherscan.io/tx/0x10a925402ec630d3d04c671d2271156611cc580e9df9b57db8f55719f6d39ab0)
+3. Sending ETH to vitalik.eth — [etherscan.io/tx/0x2c0f…](https://etherscan.io/tx/0x2c0fe61f80a1bff3924b35d412d6dc4b6cbd033318bac79e72a7bd90d37e81f9)
 
 ## DeFi profile keys
 
