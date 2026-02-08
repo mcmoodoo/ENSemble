@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useAccount, usePublicClient, useWalletClient, useSwitchChain } from "wagmi";
 import { mainnet } from "viem/chains";
-import { waitForTransactionReceipt } from "viem";
+import { waitForTransactionReceipt } from "viem/actions";
 import { Header } from "@/components/Header";
 import { getDefiProfile, resolveEnsName, setDefiProfileRecords } from "@/lib/ens";
 import { defiProfileToRecords, type DefiProfile } from "@/lib/defi-profile-spec";
@@ -121,7 +121,7 @@ export default function ProfilePage() {
         : [],
       paymentPreferredToken: data.paymentPreferredToken ?? "",
       paymentPreferredChainId:
-        data.paymentPreferredChainId != null && data.paymentPreferredChainId !== ""
+        data.paymentPreferredChainId != null
           ? Number(data.paymentPreferredChainId)
           : undefined,
     };
@@ -337,7 +337,7 @@ export default function ProfilePage() {
               )}
               {Object.keys(errors).length > 0 && (
                 <p className="text-red-600 dark:text-red-400 text-sm">
-                  {Object.entries(errors).map(([k, v]) => v?.message).filter(Boolean).join(" ")}
+                  {Object.entries(errors).map(([, v]) => v?.message).filter(Boolean).join(" ")}
                 </p>
               )}
               {saveError && (
